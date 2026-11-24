@@ -239,6 +239,9 @@
           - plugin: xpusmi
             config:
               - name_prefix = "agent_"
+          - plugin: brsmi
+            config:
+              - name_prefix = "agent_"
         # Each optional input is added on its own: configuring an input whose
         # tool is missing makes telegraf fail to start, so the two probes of
         # tasks/probe_baremetal_collectors.yml are checked independently.
